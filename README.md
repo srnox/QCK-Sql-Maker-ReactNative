@@ -1,97 +1,101 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# FiveM SQL Generator
 
-# Getting Started
+<img src="src/images/1.png" alt="FiveM SQL Generator Logo" width="100%" />
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+A React Native application designed to help FiveM server administrators generate SQL insert statements for vehicle databases quickly and efficiently.
 
-## Step 1: Start Metro
+## 📱 App Screenshots
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+  <img src="src/images/2.png" alt="Home Screen" width="24%" />
+  <img src="src/images/3.png" alt="Add Vehicle Form" width="24%" />
+  <img src="src/images/4.png" alt="Vehicle List" width="24%" />
+  <img src="src/images/6.png" alt="Generated SQL" width="24%" />
+  <img src="src/images/7.png" alt="Onboarding Screen 1" width="24%" />
+  <img src="src/images/8.png" alt="Onboarding Screen 2" width="24%" />
+  <img src="src/images/9.png" alt="Onboarding Screen 3" width="24%" />
+  <img src="src/images/10.png" alt="Splash Screen" width="24%" />
+</div>
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## 🚀 Features
 
-```sh
-# Using npm
+- **Vehicle Management**: Add, view, and delete vehicle entries with details including name, model, price, and category
+- **SQL Generation**: Automatically generate properly formatted SQL insert statements for FiveM vehicle databases
+- **Copy & Share**: Easily copy SQL statements to clipboard or share them with other applications
+- **Intuitive UI**: Modern and responsive interface built with React Native and styled with NativeWind (TailwindCSS for React Native)
+- **Dark Mode**: Sleek dark-themed interface for comfortable usage in low-light environments
+
+## ⚙️ Tech Stack
+
+- **React Native**: Cross-platform mobile application framework
+- **TypeScript**: Type-safe JavaScript for robust code
+- **NativeWind/TailwindCSS**: Utility-first CSS framework for styling
+- **React Navigation**: Navigation library for React Native
+- **React Native Vector Icons**: Icon library for UI elements
+- **React Native Reanimated**: Animation library for smooth UI interactions
+
+## 🏗️ Project Structure
+
+```
+/src
+  /components        # Reusable UI components
+  /images            # App images and assets
+  /screens           # Main application screens
+  /types             # TypeScript type definitions
+  /utils             # Utility functions (SQL generation)
+```
+
+## 📋 Main Components
+
+- **VehicleForm**: Component to add new vehicles with validation
+- **VehicleList**: Component to display and manage the list of added vehicles
+- **CategorySelection**: Custom dropdown for vehicle category selection
+- **SQL Generator**: Utility to generate properly formatted SQL statements
+
+## 💻 Installation & Setup
+
+1. **Clone the repository**:
+```bash
+git clone https://github.com/yourusername/fivem-sql-generator.git
+cd fivem-sql-generator
+```
+
+2. **Install dependencies**:
+```bash
+npm install
+```
+
+3. **Start Metro**:
+```bash
 npm start
-
-# OR using Yarn
-yarn start
 ```
 
-## Step 2: Build and run your app
-
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
-```sh
-# Using npm
+4. **Run on Android**:
+```bash
 npm run android
-
-# OR using Yarn
-yarn android
 ```
 
-### iOS
-
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
+5. **Run on iOS**:
+```bash
 npm run ios
-
-# OR using Yarn
-yarn ios
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+## 🛠️ Usage
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+1. Add vehicles using the form at the top of the home screen
+2. View and manage your vehicle list
+3. Click "Generate SQL" to create the SQL insert statement
+4. Copy the SQL to your clipboard or share it directly
 
-## Step 3: Modify your app
+## 📱 Device Compatibility
 
-Now that you have successfully run the app, let's make changes!
+- iOS 12.0 and above
+- Android 5.0 (API 21) and above
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+## 📄 License
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+## 👥 Contributing
 
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Contributions are welcome! Please feel free to submit a Pull Request.
