@@ -1,7 +1,5 @@
 # FiveM SQL Generator
 
-<img src="src/images/1.png" alt="FiveM SQL Generator Logo" width="100%" />
-
 A React Native application designed to help FiveM server administrators generate SQL insert statements for vehicle databases quickly and efficiently.
 
 ## 📱 App Screenshots
